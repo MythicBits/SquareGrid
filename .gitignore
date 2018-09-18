@@ -1,0 +1,110 @@
+## --------------------------------------
+#  Xcode
+## --------------------------------------
+
+# With the exception of shared build settings/configurations,
+# aggressively ignore items in Xcode projects that are not needed
+# including build results, caches, and personal settings.
+
+## Build products ##
+build/
+DerivedData/
+
+## User-specific settings/configuration ##
+*.pbxuser
+!default.pbxuser
+*.mode1
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspective
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other ##
+*.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+
+## Shared settings/configuration ##
+# Don't ignore an xcshareddata folder (part of an .xcworkspace), or
+# files within it.
+!xcshareddata/
+!**/xcshareddata/*
+
+## Temp/backup files ##
+*~.nib
+*.moved-aside
+
+## Objective-C/Swift Specific ##
+*.hmap
+*.ipa
+
+
+## --------------------------------------
+#  Dependency Managers
+## --------------------------------------
+
+# We want to check in the source code from dependencies in case they
+# are no longer available when testing an old version of the project.
+
+## CocoaPods ##
+Pods/
+!Podfile.lock
+
+## Carthage ##
+# XCode 7.2+ has a bug that prevents projects from building/debugging
+# correctly if the libraries are not built on the same machine as the
+# project. Even though we usually back up the libraries, it's better to
+# have a working project.
+Carthage/
+
+
+
+## --------------------------------------
+#  Developer Tools
+## --------------------------------------
+
+# Follow recommended practice for other development tools.
+
+## AppCode ##
+.idea/
+
+## fastlane ##
+fastlane/report.xml
+fastlane/screenshots
+
+
+## --------------------------------------
+#  Environment
+## --------------------------------------
+
+# Guard against junk that can be inserted by the OS, other random
+# editors, other version control systems, etc.
+
+## OS X ##
+.DS_Store
+.Trashes
+
+## Miscellaneous editors ##
+*.swp
+# (If using CocoaPods it is recommended to comment out the *.lock rule.
+# http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects)
+*.lock
+
+## Other VCS ##
+.hg
+.svn
+CVS
+
+
+## --------------------------------------
+#  Project Settings
+## --------------------------------------
+
+# Settings specific to how I manage and maintain projects.
+
+## Backups/Unused ##
+_*
